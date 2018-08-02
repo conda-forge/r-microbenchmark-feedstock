@@ -15,7 +15,8 @@ source:
   sha256: 6feb06819b6a57346f24d7fc3f588ff60a236b5b170aa62383af456c54c8c562
 
 build:
-  number: 0
+  merge_build_host: True  # [win]
+  number: 1
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
@@ -23,15 +24,15 @@ build:
 
 requirements:
   build:
+    - posix                # [win]
+    - {{ compiler('c') }}        # [unix]
+    - {{ compiler('m2w64_c') }}  # [win]
+  host:
     - r-base
     - r-ggplot2
-    - posix                # [win]
-    - {{native}}toolchain  # [win]
-    - gcc                  # [not win]
   run:
     - r-base
     - r-ggplot2
-    - libgcc  # [not win]
 
 test:
   commands:
