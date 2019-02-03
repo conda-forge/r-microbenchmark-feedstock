@@ -1,4 +1,4 @@
-{% set version = '1.4-2.1' %}
+{% set version = "1.4-6" %}
 
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
@@ -12,11 +12,11 @@ source:
   url:
     - https://cran.r-project.org/src/contrib/microbenchmark_{{ version }}.tar.gz
     - https://cran.r-project.org/src/contrib/Archive/microbenchmark/microbenchmark_{{ version }}.tar.gz
-  sha256: 6feb06819b6a57346f24d7fc3f588ff60a236b5b170aa62383af456c54c8c562
+  sha256: 7ac46a3b0df0677873db6c8ccfebcc3882e8c91caf0cf6168ea54ef55f77c1ea
 
 build:
   merge_build_host: True  # [win]
-  number: 1001
+  number: 0
   skip: true  # [win32]
   rpaths:
     - lib/R/lib/
