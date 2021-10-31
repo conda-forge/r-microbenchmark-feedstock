@@ -3,7 +3,7 @@ About r-microbenchmark
 
 Home: https://github.com/joshuaulrich/microbenchmark/
 
-Package license: BSD_2_clause
+Package license: BSD-2-Clause
 
 Feedstock license: [BSD-3-Clause](https://github.com/conda-forge/r-microbenchmark-feedstock/blob/master/LICENSE.txt)
 
