@@ -46,10 +46,11 @@ test:
 
 about:
   home: https://github.com/joshuaulrich/microbenchmark/
-  license: BSD_2_clause
+  license: BSD-2-Clause
   summary: Provides infrastructure to accurately measure and compare the execution time of R expressions.
   license_family: BSD
-  license_file: {{ environ["PREFIX"] }}/lib/R/share/licenses/BSD_2_clause
+  license_file:
+    - {{ environ["PREFIX"] }}/lib/R/share/licenses/BSD_2_clause
 
 extra:
   recipe-maintainers:
