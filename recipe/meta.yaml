@@ -1,4 +1,4 @@
-{% set version = "1.4.9" %}
+{% set version = "1.4.10" %}
 {% set posix = 'm2-' if win else '' %}
 {% set native = 'm2w64-' if win else '' %}
 
@@ -10,11 +10,11 @@ source:
   url:
     - {{ cran_mirror }}/src/contrib/microbenchmark_{{ version }}.tar.gz
     - {{ cran_mirror }}/src/contrib/Archive/microbenchmark/microbenchmark_{{ version }}.tar.gz
-  sha256: 443d2caf370ef33e4ac2773176ad9eb86f8790f43b430968ef9647699dbbffd2
+  sha256: 04cc41be72708dce8d31ff1cb105d88cc9f167250ea00fe9a165c99204b9b481
 
 build:
   merge_build_host: true  # [win]
-  number: 1
+  number: 0
   rpaths:
     - lib/R/lib/
     - lib/
